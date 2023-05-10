@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <title>ToDo Додаток</title>
+</head>
+<body>
+   <div class="container">
+      <div class="header">
+         <div class="logo">ToDo</div>
+      </div>
+
+      <!-- List of tasks -->
+      <div class="card">
+         <ul id="tasksList" class="list-group">
+            <!-- <li id="emptyList" class="list-group-item">
+               <div class="empty-img"></div>
+               <div class="empty-list" >The to-do list is empty</div>
+            </li> -->
+
+            <!-- <li class="list-task-item">
+               <span class="task-title ">Проснулся Проснулся Проснулся Проснулся </span>
+               <div class="task-item__buttons">
+                  <button type="button" data-action="done" class="btn-action">
+                     <img src="./img/icons8-done.svg" alt="Done" width="20" height="20">
+                  </button>
+                  <button type="button" data-action="delete" class="btn-action">
+                     <img src="./img/icons8-close.svg" alt="Done" width="20" height="20">
+                  </button>
+               </div>
+            </li> -->
+         </ul> 
+      </div>
+
+      <!-- Form -->
+      <div class="card">
+         <div class="card-header">Додати нове завдання</div>
+         <div class="card-body">
+				<form id="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="taskInput" placeholder="Текс завдання" required>
+						<small id="emailHelp" class="form-text text-muted">Що робимо, скільки часу витрачаємо, який результат отримуємо.</small>
+					</div>
+					<button type="submit" class="btn btn-primary  btn-lg active">Додати</button>
+				</form>
+			</div>
+      </div>
+   </div>
+  <script src="js/main.js"></script> 
+</body>
+</html>

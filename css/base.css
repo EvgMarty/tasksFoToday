@@ -1,0 +1,198 @@
+html, body {
+   min-height: 100vh;
+}
+
+body {
+   background-color: #1b2223;
+   padding: 30px 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   font-family: 'Bebas Neue', sans-serif;
+}
+
+/*не учитывать падинги*/
+*,
+*:after,
+*:before{
+   box-sizing: border-box;
+}
+
+/*контейнер выставляем по центру */
+.container{
+   width: 100%;
+   max-width: 750px;
+   margin: 0 auto;
+}
+
+.header{
+   background: #000 url(../img/Z5aE.gif) no-repeat left  ;
+   background-size: cover;
+}
+
+.logo{
+   color: #182028;
+   font-size: 3.5rem;
+   font-weight: 400;
+   padding-left: 70px;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding-top: 50px;
+}
+
+.list-group{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.list-group-item{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-top-left-radius: 0.25rem;
+   border-top-right-radius: 0.25rem;
+   background: #2c343c;
+   padding: 10px;
+   width: 100%;
+   border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.empty-img{
+   height: 50px;
+   width: 50px;
+   background:  url(../img/to-do-list.png) no-repeat left  ;
+   background-size: cover;
+}
+.empty-list{
+   font-size: 28px;
+   margin-bottom: 15px;
+   font-weight: 300;
+}
+
+.list-task-item{
+   display: flex;
+   justify-content: space-between;
+   background: #2c343c;
+   border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.list-task-item:last-child{
+   border-bottom-left-radius: 0.25rem;
+   border-bottom-right-radius: 0.25rem;
+}
+
+.task-title{
+   color:  #b1afae;
+   font-size: 14px;
+   padding: 15px;
+   font-weight: 300;
+}
+
+.task-title--done{
+   color: #507a4e;
+   text-decoration:line-through ;
+}
+
+.task-item__buttons{
+   display: flex;
+   margin-left: 20px;
+   column-gap: 10px;
+   padding: 10px;
+}
+
+.btn-action{
+   font-size: 18px;
+   padding: 8px 10px;
+   width: 50px;
+   background: #1b2223;
+   border: solid 2px #2c343c;
+   cursor: pointer;
+   border-radius: 4px;
+   opacity: 0.5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: opacity 0.2s ease-in-out;
+}
+
+
+.btn-action:hover{
+   opacity: 1.5;
+}
+
+.btn-action:active{
+   border: solid 2px #b1afae;
+}
+
+
+
+.card-header{
+   font-size: 14px;
+   color:  #b1afae;
+   background: #2c343c;
+   border-top-left-radius: 0.25rem;
+   border-top-right-radius: 0.25rem;
+   padding: 10px;
+   border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+#form{
+   color:  #b1afae;
+   padding: 15px;
+   flex-direction: column;
+   background: #2c343c;
+   border-bottom-left-radius: 0.25rem;
+   border-bottom-right-radius: 0.25rem;
+}
+
+.form-group{
+   display: flex;
+   flex-direction: column;
+}
+
+.form-control{
+   color:  #b1afae;
+   padding: 0.375rem 0.75rem;
+   font-size: 14px;
+   line-height: 1.5;
+   margin: 5px 0;
+   background: #1b2223;
+   border: solid 2px #2c343c;
+   border-radius: 0.25rem;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.form-control:focus{
+   border: solid 2px #b1afae;
+}
+
+.form-text{
+   font-size: 11px;
+   margin-left: 4px;
+}
+
+.btn{
+   color:  #b1afae;
+   font-size: 18px;
+   padding: 8px 10px;
+   background: #1b2223;
+   border: solid 2px #2c343c;
+   cursor: pointer;
+   margin: 10px 4px;
+   border-radius: 4px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: opacity 0.2s ease-in-out;
+}
+
+.btn:active{
+   border: solid 2px #b1afae;
+}
+
